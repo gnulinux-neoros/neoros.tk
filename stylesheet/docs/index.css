@@ -1,0 +1,124 @@
+.nr-banner-list {
+	background-color: #000;
+}
+
+.nr-list li > a {
+	color: #fff;
+}
+
+.nr-navbar-button-inner > div {
+	background-color: #fff;
+}
+
+.nr-header {
+	background-image: none;
+	background: linear-gradient(144deg, #036, #0072e5);
+	color: #fff;
+}
+
+.nr-header-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nr-header-wrapper > .nr-banner p {
+	font-size: 60px;
+	font-weight: bold;
+	text-shadow: 0px 4.5px 4px #ffffff57
+}
+
+.nr-banner-selection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nr-horizontial-line {
+	background-color: #fff;
+	width: 300px;
+	height: 1px;
+	display: flex;
+	justify-content: center;
+}
+
+.nr-banner-selection-text {
+	font-size: 15px;
+	margin-left: 8.5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.nr-navbar-list {
+	margin: 50px 0;
+}
+
+.nr-navbar-list-inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.nr-navbar-list-inner a {
+	text-decoration: inherit;
+	color: #fff;
+	margin: 15px;
+}
+
+.nr-list-card {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	transition: ease .2s;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+	box-shadow: 0px 5px 9px #0009;
+	cursor: pointer;
+	min-height: 250px;
+	max-width: 100%;
+}
+
+.nr-list-card:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0px 5px 9px #000000c2;
+}
+
+.nr-list-card:hover > .nr-list-card-title {
+	background: -webkit-linear-gradient(144deg, #0072e5, #036);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nr-list-card:hover > .nr-list-card-description {
+	color: #686868;
+}
+
+.nr-list-card-title {
+	margin-block-start: 10px;
+	margin-block-end: 10px;
+	font-weight: bold;
+}
+
+.nr-list-card-description {
+	margin-block-start: 10px;
+	margin-block-end: 10px;
+	color: #fff;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 790px){
+	.nr-header-wrapper > .nr-banner p {
+		font-size: 40px;
+	}
+	.nr-horizontial-line {
+		display: none;
+	}
+}

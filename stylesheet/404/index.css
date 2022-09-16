@@ -1,0 +1,59 @@
+.nr-banner-list {
+	background-color: #fff;
+}
+
+.nr-list li > a {
+	color: #000;
+}
+.nr-navbar-button-inner > div {
+	background-color: #000;
+}
+
+
+.nr-header {
+	background-image: none;
+	background-color: #fff;
+}
+
+.nr-header > .nr-banner p:not(p.nr-status-code) {
+	font-size: 50px;
+	font-weight: bold;
+	max-width: 850px;
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #000;
+}
+
+.nr-banner > .nr-status-code {
+	color: #cdcdcd;
+	font-size: 17px !important;
+	font-weight: normal !important;
+}
+
+.nr-body {
+	margin-top: 30px;
+        margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.nr-body p {
+	font-size: 20px !important;
+	font-weight: 300 !important;
+}
+
+.nr-body a {
+	color: #000;
+	transition: ease .2s;
+}
+
+.nr-body a:hover {
+	color: rgb(255, 196, 0);
+}
+
+@media screen and (max-width: 790px){
+	.nr-header > .nr-banner p:not(p.nr-status-code) {
+		font-size: 40px;
+	}
+}

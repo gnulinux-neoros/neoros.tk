@@ -1,0 +1,81 @@
+.nr-banner-list {
+	background-color: #fff;
+}
+
+.nr-list li > a {
+	color: #000;
+}
+.nr-navbar-button-inner > div {
+	background-color: #000;
+}
+
+.nr-header {
+	background: #fff;
+}
+
+.nr-content {
+	background-color: #fff;
+	padding: 60px;
+}
+
+.nr-container {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+
+.nr-informations {
+	display: flex;
+	flex-direction: column;
+}
+
+.nr-informations-title {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 26px;
+}
+
+.nr-informations-infouser {
+	display: flex;
+}
+
+.nr-informations-infouser > img {
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.nr-informations-infouser > p {
+	color: #767676;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-warning {
+	color: #000;
+	margin-bottom: 50px !important;
+}
+
+.nr-content-banner {
+	font-size: 17px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.nr-content-banner h1, .nr-content-banner h2, .nr-content-banner h3, .nr-content-banner h4, .nr-content-banner h5, .nr-content-banner h6 {
+	margin-bottom: 10px;
+}
+
+.nr-content-banner p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 480px){
+	.nr-content > div {
+		width: 100%;
+	}
+}
