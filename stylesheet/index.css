@@ -140,9 +140,6 @@
 	}
 }
 @media screen and (max-width: 412px) {
-	.nr-board-option > p {
-		margin: 0;
-	}
 	.nr-selection {
 		width: 100%;
 	}
