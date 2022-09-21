@@ -46,6 +46,10 @@
 	margin: 20px;
 	text-align: center;
 }
+.nr-board-background-img {
+	max-width: 100%;
+	height: auto;
+}
 .nr-selection {
 	margin: 50px auto;
 	display: flex;
@@ -142,5 +146,26 @@
 @media screen and (max-width: 412px) {
 	.nr-selection {
 		width: 100%;
+	}
+
+	.nr-section-download {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.nr-board-option > p {
+		font-size: 30px;
+	}
+
+	.nr-selection-information > .nr-selection-title {
+		font-size: 25px;
+	}
+
+	.nr-selection-information > .nr-selection-description {
+		font-size: 15px;
+	}
+
+	.nr-selection-item {
+		font-size: 14px;
 	}
 }
