@@ -77,6 +77,8 @@
 .nr-selection-information > .nr-selection-description {
 	color: #6b6b6b;
 	font-size: 17px;
+	max-width: 1500px;
+	margin-right: 40px;
 }
 .nr-selection-download {
 	margin-top: 50px;
