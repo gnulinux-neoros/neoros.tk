@@ -177,6 +177,8 @@
 
 	.nr-selection-information > .nr-selection-description {
 		font-size: 15px;
+		max-width: 100%;
+		margin-right: 0;
 	}
 
 	.nr-selection-item {
