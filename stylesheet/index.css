@@ -10,6 +10,7 @@
     	filter: drop-shadow(0px 0px 8px #ffffff75);
     }
 }
+
 .nr-board-information { margin-right: 150px; } #nr-board-icon { display: none; } .nr-board-reverse { flex-direction: row-reverse; } .nr-board-reverse > .nr-board-information {margin-right: 0px; margin-left: 150px;text-align: right;}
 .nr-neoros-desktop-img {
 	position: relative;
@@ -33,11 +34,13 @@
 
 .nr-banner-list {
 	background-color: #000;
+	color: #fff;
 }
 
 .nr-list li > a {
 	color: #fff;
 }
+
 .nr-navbar-button-inner > div {
 	background-color: #fff;
 }

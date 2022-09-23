@@ -3,11 +3,12 @@ var nr_navbar_list_button = document.getElementById('nr-navbar-list-button');
 var nr_document_body = document.body;
 
 function showNavbarList(){
-    if(nr_list.style.display != 'flex'){
-        nr_list.style.display = 'flex';
+    if(!nr_list.classList.contains('nr-banner-list-translatex')){
+        nr_list.classList.add('nr-banner-list-translatex');
         nr_document_body.style.overflow = 'hidden';
-    } else {
-        nr_list.style.display = 'none';
+    } else
+    if(nr_list.classList.contains('nr-banner-list-translatex')) {
+        nr_list.classList.remove('nr-banner-list-translatex')
         nr_document_body.style.overflow = 'auto';
     }
 }
