@@ -1,3 +1,11 @@
+.nr-navigator .nr-navigator-list a {
+    color: #fff;
+}
+
+.nr-navigator .nr-navigator-list a::after {
+    background-color: #fff;
+}
+
 .nr-banner {
 	margin: 80px;
 }
