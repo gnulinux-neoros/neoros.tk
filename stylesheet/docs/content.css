@@ -37,26 +37,9 @@
 	margin-bottom: 26px;
 }
 
-.nr-informations-infouser {
-	display: flex;
-}
-
-.nr-informations-infouser > img {
-	border-radius: 50px;
-	margin-right: 10px;
-}
-
-.nr-informations-infouser > p {
-	color: #767676;
-	font-size: 16px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.container-warning {
-	color: #000;
-	margin-bottom: 50px !important;
+.nr-informations-description {
+	font-size: 15px;
+	color: #a7a7a7;
 }
 
 .nr-content-banner {
@@ -72,7 +55,17 @@
 .nr-content-banner p {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-size: 15px;
+	font-size: 17px;
+}
+
+.nr-content-banner ul {
+	margin-top: 40px;
+	font-size: 17px;
+}
+
+.nr-content-banner ul li {
+	list-style: disc;
+	line-height: 2;
 }
 
 @media screen and (max-width: 480px){
