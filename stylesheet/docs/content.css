@@ -49,6 +49,7 @@
 }
 
 .nr-content-banner h1, .nr-content-banner h2, .nr-content-banner h3, .nr-content-banner h4, .nr-content-banner h5, .nr-content-banner h6 {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
@@ -60,6 +61,7 @@
 
 .nr-content-banner ul {
 	margin-top: 40px;
+	margin-bottom: 40px;
 	font-size: 17px;
 }
 
@@ -68,8 +70,40 @@
 	line-height: 2;
 }
 
+.nr-content-banner .ul2 li {
+	list-style: decimal;
+}
+
+.nr-content-banner a {
+	color: #3076df;
+	text-decoration: none;
+}
+
+.container-information,.container-warning,.container-critical {
+	color: #000;
+}
+
 @media screen and (max-width: 480px){
+	.nr-content {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 	.nr-content > div {
 		width: 100%;
+	}
+
+	.nr-content-banner p {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 15px;
+	}
+
+	.nr-content-banner ul {
+		margin-top: 40px;
+		font-size: 15px;
+	}
+
+	.container-information,.container-warning,.container-critical {
+		font-size: 13px !important;
 	}
 }
