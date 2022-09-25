@@ -79,6 +79,11 @@
 	text-decoration: none;
 }
 
+.nr-content-banner img {
+	margin: 50px auto;
+	display: block;
+}
+
 .container-information,.container-warning,.container-critical {
 	color: #000;
 }
