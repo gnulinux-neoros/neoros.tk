@@ -1,4 +1,5 @@
-.nr-header { background: linear-gradient(180deg, #000000, #000277); } #nr-neoros-desktop { position: relative; display: flex; justify-content: center; margin-block-start: 20px; margin-block-end: 20px; } .nr-banner { margin: 80px; display: flex; flex-direction: column; text-align: center; } .nr-banner > .nr-largetext { color: #fff; font-size: 70px; font-weight: bold; margin-bottom: 15px; animation: showUp 1s; } .nr-animation { animation: showUp 1s; opacity: 1; } @keyframes showUp { 0% { opacity: 0; } 100% { opacity: 1; }} .nr-banner > p { font-size: 19px; color: #fff; } .nr-banner-button { margin-top: 45px; display: flex; margin-left: auto; margin-right: auto; } .nr-banner-button > a { margin-right: 15px; text-decoration: none; } .nr-section { background-color: transparent; padding: 100px 70px; display: flex; flex-direction: column; color: white; } .nr-board { display: flex; justify-content: space-between; margin-bottom: 65px; } .nr-board-information { display: flex; flex-direction: column; } .nr-board-title p { font-size: 50px; text-transform: uppercase; line-height: 1; font-weight: bolder; } .nr-board-title .nr-text-yellow { color: #ffd000; } .nr-board-title .nr-text-teal { color: #00897b; } .nr-board-description { margin-top: 10px; } .nr-board-description p { font-size: 18.5px; } .nr-arrow-container{ margin: 70px 20px; } .nr-arrow div { display: block; width: 15px; height: 15px; transform: rotate(45deg); border-right: 3px solid #fff; border-bottom: 3px solid #fff; margin: 0 0 3px 10px; animation: glowUp 5s infinite; } 
+.nr-header { background: linear-gradient(180deg, #000000, #000153); } #nr-neoros-desktop { position: relative; margin-block-start: 20px; margin-block-end: 20px; width: 70%; height: 80%; }
+.nr-banner-wrapper { display: flex; justify-content: space-between; margin-top: 50px; } .nr-banner { margin: 80px; display: flex; flex-direction: column; text-align: center; } .nr-banner > .nr-largetext { position: relative; color: #fff; font-size: 50px; font-weight: bold; margin-bottom: 15px; animation: showUp .7s; text-align: left; } .nr-banner > #nr-smalltext { position: relative; text-align: left; } .nr-animation { animation: showUp .6s; opacity: 1; } @keyframes showUp { 0% { opacity: 0; top: 50px; } 100% { opacity: 1; top: 0; }} .nr-banner > p { font-size: 19px; color: #fff; } .nr-banner-button { margin-top: 45px; display: flex; margin-left: auto; margin-right: auto; } .nr-banner-button > a { margin-right: 15px; text-decoration: none; font-size: 15px; } .nr-section { background-color: transparent; padding: 100px 70px; display: flex; flex-direction: column; color: white; } .nr-board { display: flex; justify-content: space-between; margin-bottom: 65px; } .nr-board-information { display: flex; flex-direction: column; } .nr-board-title p { font-size: 50px; text-transform: uppercase; line-height: 1; font-weight: bolder; } .nr-board-title .nr-text-yellow { color: #ffd000; } .nr-board-title .nr-text-teal { color: #00897b; } .nr-board-description { margin-top: 10px; } .nr-board-description p { font-size: 18.5px; } .nr-arrow-container{ margin: 70px 20px; } .nr-arrow div { display: block; width: 15px; height: 15px; transform: rotate(45deg); border-right: 3px solid #fff; border-bottom: 3px solid #fff; margin: 0 0 3px 10px; animation: glowUp 5s infinite; } 
 @keyframes glowUp {
     0% {
     	filter: drop-shadow(0px 0px 8px #ffffff75);
@@ -12,22 +13,24 @@
 }
 
 .nr-board-information { margin-right: 150px; } #nr-board-icon { display: none; } .nr-board-reverse { flex-direction: row-reverse; } .nr-board-reverse > .nr-board-information {margin-right: 0px; margin-left: 150px;text-align: right;}
-.nr-neoros-desktop-img {
-	position: relative;
+
+#nr-neoros-desktop-img {
+	width: 80%;
+	height: 80%;
 }
 
 .nr-laptop-overlay {
 	position: absolute;
-    width: 58.5%;
+    width: 65%;
     top: 50.5%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-64.5%);
 	max-width: 100%;
 	height: auto;
 }
 
 .nr-laptop-overlay img {
-	border-radius: 4.5px;
+	border-radius: 5px;
 	max-width: 100%;
 	height: auto;
 }
@@ -147,9 +150,32 @@
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 1258px) { .nr-board { text-align: center; align-items: center; flex-direction: column; } .nr-board-option > p { margin-bottom: 60px; } #nr-board-background { display: none; } .nr-banner-button { flex-direction: column; } .nr-banner-button > .nr-button-primary { margin-right: 0px; margin-bottom: 15px; } .nr-board-information { margin-right: 0px !important; margin-bottom: 30px !important; } .nr-board-reverse > .nr-board-information { text-align: center; align-items: center; margin-left: 0px !important; margin-bottom: 30px !important; } #nr-board-icon { display: block; } .nr-selection-navbar { margin-right: 0px; margin-bottom: 25px; flex-direction: column; } .nr-selection-information { margin-left: 0px; margin-top: 15px; margin-bottom: 15px; } .nr-selection { flex-direction: column; margin: 25px auto; max-width: 700px; width: 90%; margin-bottom: 120px; } .nr-selection:nth-child(4){ margin-bottom: 25px; } }
+@media screen and (max-width: 1258px) {
+	.nr-board { text-align: center; align-items: center; flex-direction: column; } .nr-board-option > p { margin-bottom: 60px; } #nr-board-background { display: none; } .nr-banner-button { flex-direction: column; } .nr-banner-button > .nr-button-primary { margin-right: 0px; margin-bottom: 15px; } .nr-board-information { margin-right: 0px !important; margin-bottom: 30px !important; } .nr-board-reverse > .nr-board-information { text-align: center; align-items: center; margin-left: 0px !important; margin-bottom: 30px !important; } #nr-board-icon { display: block; } .nr-selection-navbar { margin-right: 0px; margin-bottom: 25px; flex-direction: column; } .nr-selection-information { margin-left: 0px; margin-top: 15px; margin-bottom: 15px; } .nr-selection { flex-direction: column; margin: 25px auto; max-width: 700px; width: 90%; margin-bottom: 120px; } .nr-selection:nth-child(4){ margin-bottom: 25px; }
+	#nr-neoros-desktop {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.nr-banner > .nr-largetext {
+		text-align: center;
+	}
+
+	.nr-banner > #nr-smalltext {
+		text-align: center;
+	}
+	.nr-banner-wrapper {
+		flex-direction: column-reverse;
+	}
+	
+	.nr-laptop-overlay {
+		top: 51%;
+		left: 50%;
+		width: 65.5%;
+	}
+}
 @media screen and (max-width: 700px){
-	.nr-banner > .nr-largetext { font-size: 50px; }
+	.nr-banner > .nr-largetext { font-size: 40px; }
 }
 
 @media screen and (max-width: 500px){

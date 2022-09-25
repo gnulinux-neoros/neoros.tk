@@ -5,4 +5,4 @@ setTimeout(() => {
         smalltext.classList.add('nr-animation');
         smalltext.style.opacity = '1';
     }
-}, 1000);
+}, 400);
