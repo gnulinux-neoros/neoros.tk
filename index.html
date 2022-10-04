@@ -93,21 +93,20 @@
             <div class="nr-banner-wrapper">
                 <div class='nr-banner'>
                     <div class='nr-largetext'>
-                        <span class="nr-simplicity">From simplicity to </span>
-                        <span class="nr-colorful">colorful</span>
+                        <p>From simplicity to colorful</p>
                     </div>
                     <p id='nr-smalltext' style="opacity: 0;">Linux Neoros is an open-source, Arch-based operating system. Everything has designed from the software to desktop to look more user-friendly.</p>
                 </div>
-                <div id='nr-neoros-desktop'>
-                    <img id="nr-neoros-desktop-img" src='./image/desktop.svg' alt='Neoros Laptop Image'>
-                    <div class="nr-laptop-overlay">
-                        <img src="./image/desktop-1.png" alt="Neoros Desktop">
-                    </div>
-                </div>
             </div>
             <div class='nr-banner-button'>
-                <a href="#download" class='nr-button-primary'>Download</a>
-                <a href="./docs/" class='nr-button-warning' style='margin: 0;'>Documentation</a>
+                <a href="#download" class='nr-banner-item'>Download (Neoros 7.22)</a>
+                <a href="./docs/" class='nr-banner-item' style='margin: 0;'>Documentation</a>
+            </div>
+            <div id='nr-neoros-desktop'>
+                <img id="nr-neoros-desktop-img" src='./image/desktop.svg' alt='Neoros Laptop Image'>
+                <div class="nr-laptop-overlay">
+                    <img src="./image/desktop-1.png" alt="Neoros Desktop">
+                </div>
             </div>
             <div style='display: flex; justify-content: center;' class='nr-arrow-container'>
                 <a href='#section' class='nr-arrow'>
@@ -129,12 +128,6 @@
                     <p>Your informations are really important, but things disappeared after you reinstalling Neoros. So we've been working hard and proudly introducing you this new level of Linux.</p>
                 </div>
             </div>
-            <div id='nr-board-background'>
-                <img src='./image/neoros_backup_files.jpg' class="nr-board-background-img" alt='Backup Your Important Files Everyday'>
-            </div>
-            <div id='nr-board-icon'>
-                <img src='./image/neoros_backup_files.jpg' class="nr-board-background-img" alt='Backup Your Important Files Everyday'>
-            </div>
         </div>
         <div class='nr-board nr-board-reverse'>
             <div class='nr-board-information'>
@@ -147,12 +140,6 @@
                     <p>In Neoros community, we take very seriously about your privacy and informations. When you use Neoros, you've activated our security shield to prevent you from malware and virus.</p>
                 </div>
             </div>
-            <div id='nr-board-background'>
-                <img src='./image/neoros-secure.png' class="nr-board-background-img" alt='Let Neoros Protect You 24/7'>
-            </div>
-            <div id='nr-board-icon'>
-                <img src='./image/neoros-secure-responsive-icon.png' class="nr-board-background-img" alt='Let Neoros Protect You 24/7'>
-            </div>
         </div>
         <div class='nr-board'>
             <div class='nr-board-information'>
@@ -164,15 +151,14 @@
                     <p>Just a few setup installation steps and you can use Linux Neoros in 10 minutes.</p>
                 </div>
             </div>
-            <div id='nr-board-background'>
-                <img src='./image/neoros-secure.png' class="nr-board-background-img" alt='Easy To Install'>
-            </div>
-            <div id='nr-board-icon'>
-                <img src='./image/neoros-secure-responsive-icon.png' class="nr-board-background-img" alt='Easy To Install'>
-            </div>
         </div>
     </section>
-    <section class='nr-section nr-section-download' id='download'>
+    <section class='nr-section nr-section-download light-mode-nr-section-download' id='download'>
+        <div class="nr-toggle-theme">
+            <p class="nr-option" id="toggle-white">Light</p>
+            <p>|</p>
+            <p class="nr-option" id="toggle-dark">Dark</p>
+        </div>
         <div class="nr-board-option">
             <p>Choose Your Desktop Environment</p>
         </div>
@@ -228,6 +214,33 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+        var download = document.getElementById('download');
+        function toggleLight(){
+            download.classList.remove('dark-mode-nr-section-download');
+            download.classList.add('light-mode-nr-section-download');
+        }
+        
+        function toggleDark(){
+            var download = document.getElementById('download');
+            download.classList.remove('light-mode-nr-section-download');
+            download.classList.add('dark-mode-nr-section-download');
+        }
+
+        var tgw = document.getElementById('toggle-white');
+        var tgd = document.getElementById('toggle-dark');
+
+        if(tgw.classList.contains('light-mode-nr-section-download')){
+            console.log('Currently on light mode.')
+        } else {
+            tgw.addEventListener('click', toggleLight);
+        }
+        if(tgd.classList.contains('dark-mode-nr-section-download')){
+            console.log('Currently on dark mode.')
+        } else {
+            tgd.addEventListener('click', toggleDark);
+        }
+    </script>
     <div class="nr-footer">
         <img src="./favicon.ico/android-icon-48x48.png" width="40px" height="40px" style="margin-bottom: 10px;">
         <div>

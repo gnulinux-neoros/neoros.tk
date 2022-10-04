@@ -32,7 +32,7 @@
 
 .nr-informations-title {
 	font-size: 40px;
-	font-weight: bold;
+	font-weight: 400;
 	margin-top: 10px;
 	margin-bottom: 26px;
 }
@@ -40,6 +40,7 @@
 .nr-informations-description {
 	font-size: 15px;
 	color: #a7a7a7;
+	font-weight: 350;
 }
 
 .nr-content-banner {
@@ -51,6 +52,7 @@
 .nr-content-banner h1, .nr-content-banner h2, .nr-content-banner h3, .nr-content-banner h4, .nr-content-banner h5, .nr-content-banner h6 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-weight: 400;
 }
 
 .nr-content-banner p {

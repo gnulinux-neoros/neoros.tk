@@ -37,7 +37,7 @@ body {
 
 .nr-option-header {
 	font-size: 40px;
-	font-weight: bold;
+	font-weight: 400;
 	margin-top: 50px;
 	margin-bottom: 50px;	
 }
@@ -46,6 +46,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 25px;
+	font-weight: 350;
 }
 
 .nr-options > .nr-option-header {
