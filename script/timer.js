@@ -1,3 +1,7 @@
+var content = document.getElementById('nr-pagecontent');
+
+content.textContent = `We couldn't find the page ${window.location.pathname}, make sure you've provided us the right page.`
+
 function startTimer(duration, display) {
     var timer = duration, seconds;
     setInterval(function () {
@@ -5,10 +9,11 @@ function startTimer(duration, display) {
 
         seconds = seconds == 1 ? seconds + " second": seconds + " seconds"
 
-        display.innerHTML = `To keep you safe, this website will redirect you to Home in ${seconds}, or click <a href='/' id='redirect'>Here</a> to redirect automatically.`;
+        display.textContent = `The website will automatically redirect you to home in ${seconds}.`;
 
         if (--timer < 0) {
             window.location = '/';
+            display.textContent = 'Redirecting...'
         }
         
 
@@ -25,7 +30,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var time = 10;
+    var time = 9;
     var displayText = document.getElementById('nr-timer');
     startTimer(time, displayText);
 };

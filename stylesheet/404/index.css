@@ -14,47 +14,26 @@
 .nr-header {
 	background-image: none;
 	background-color: #fff;
+	height: 100vh;
 }
 
-.nr-header > .nr-banner p:not(p.nr-status-code) {
+.nr-header > .nr-banner p {
 	font-size: 50px;
-	font-weight: bold;
-	max-width: 850px;
-	text-align: left;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	color: #000;
-}
-
-.nr-banner > .nr-status-code {
-	color: #cdcdcd;
-	font-size: 17px !important;
-	font-weight: normal !important;
 }
 
 .nr-body {
 	margin-top: 30px;
-        margin-bottom: 30px;
+    margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 }
 
 .nr-body p {
-	font-size: 20px !important;
+	font-size: 16px !important;
 	font-weight: 300 !important;
-}
-
-.nr-body a {
-	color: #000;
-	transition: ease .2s;
-}
-
-.nr-body a:hover {
-	color: rgb(255, 196, 0);
-}
-
-@media screen and (max-width: 790px){
-	.nr-header > .nr-banner p:not(p.nr-status-code) {
-		font-size: 40px;
-	}
 }
