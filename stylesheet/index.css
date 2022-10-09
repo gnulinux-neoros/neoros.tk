@@ -71,12 +71,16 @@
 
 .nr-version-release {
 	background-color: #000;
-	padding: 100px 45px;
+	padding: 100px 0;
 }
 
 .nr-version-release-wrapper {
 	display: flex;
 	flex-direction: column;
+}
+
+.nr-version-release-header {
+	padding: 0 45px;
 }
 
 .nr-version-release-header p.nr-version-release-header-text {
