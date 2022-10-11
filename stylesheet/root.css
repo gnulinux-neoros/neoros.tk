@@ -11,6 +11,11 @@ html { scroll-behavior: smooth; } @font-face { font-family: "Cantarell var"; fon
     justify-content: space-between;
 }
 
+.nr-footer-items a{
+    text-decoration: none;
+    color: white;
+}
+
 .nr-footer .nr-footer-container {
     display: flex;
     flex-direction: column;
