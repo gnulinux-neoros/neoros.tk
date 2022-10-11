@@ -17,3 +17,18 @@ function hideNavbarList() {
     nr_list.style.display = 'none';
     nr_document_body.style.overflow = 'auto';
 }
+
+
+function pageLoad(sender, args) {
+    var prm = Sys.WebForms.PageRequestManager.getInstance();
+    prm.add_beginRequest(BeginRequestHandler);
+    prm.add_endRequest(EndRequestHandler);
+}
+
+function BeginRequestHandler(sender, args) {
+    document.getElementById("loading").style.visibility = 'visible';
+}
+
+function EndRequestHandler(sender, args) {
+   document.getElementById("loading").style.visibility = 'hidden';
+}

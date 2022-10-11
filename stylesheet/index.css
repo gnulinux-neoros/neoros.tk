@@ -190,26 +190,6 @@
 	box-shadow: 0px 0 20px #000;
 	transition: ease .3s;
 }
-.nr-footer {
-	background-color: #2b0016;
-	color: #fff;
-	padding: 30px;
-	font-size: 13px;
-	align-items: center;
-	text-align: center;
-}
-.nr-footer-items {
-	display: inline;
-	justify-content: center;
-	align-items: center;
-}
-.nr-footer-items a {
-	color: #fff;
-	text-decoration: inherit;
-}
-.nr-footer-items a:hover {
-	text-decoration: underline;
-}
 
 .nr-toggle-theme {
 	margin: 20px;
