@@ -271,7 +271,7 @@
 }
 
 @media screen and (max-width: 1258px) {
-	.nr-board { text-align: center; align-items: center; flex-direction: column; } .nr-board-option > p { margin-bottom: 60px; } .nr-banner-button { flex-direction: column; margin-left: auto; margin-right: auto; } .nr-banner-button > .nr-banner-item { display: flex; justify-content: center; margin-right: 0px; margin-bottom: 15px; } .nr-board-information { margin-right: 0px !important; margin-bottom: 30px !important; padding: 0;} .nr-selection-navbar { margin-right: 0px; margin-bottom: 25px; flex-direction: column; } .nr-selection-information { margin-left: 0px; margin-top: 15px; margin-bottom: 15px; } .nr-selection { flex-direction: column; margin: 25px auto; max-width: 700px; width: 90%; margin-bottom: 120px; } .nr-selection:nth-child(4){ margin-bottom: 25px; }
+	.nr-board { text-align: center; align-items: center; flex-direction: column; } .nr-board-option > p { margin-bottom: 60px; } .nr-banner-button { flex-direction: column; margin-left: auto; margin-right: auto; } .nr-banner-button > .nr-banner-item { display: flex; justify-content: center; margin-right: 0px; margin-bottom: 15px; } .nr-board-information { margin-right: 0px !important; margin-bottom: 30px !important; padding: 0;} .nr-selection-navbar { margin-right: 0px; margin-bottom: 25px; flex-direction: column; } .nr-selection-information { margin-left: 0px; margin-top: 15px; margin-bottom: 15px; } .nr-selection { flex-direction: column; margin: 25px auto; max-width: 700px; width: 90%; margin-bottom: 120px; }
 	#nr-neoros-desktop {
 		display: flex;
 		justify-content: center;
