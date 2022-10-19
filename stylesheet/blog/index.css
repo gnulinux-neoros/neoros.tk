@@ -24,8 +24,8 @@
 }
 
 .nr-header {
-	background: linear-gradient(180deg, #000, #00214a);
-	color: #fff;
+	background: linear-gradient(180deg, #000, #00214a) !important;
+	color: #fff !important;
 }
 
 .nr-banner-title {
@@ -132,4 +132,10 @@
 	.nr-banner {
 		margin: 50px;
 	}
+}
+
+/** Dark mode area **/
+.dark-mode .nr-content {
+	background-color: #000;
+	color: #fff;
 }

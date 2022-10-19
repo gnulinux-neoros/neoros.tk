@@ -47,15 +47,15 @@
             background-color: #fff;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a8e8e98323.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="nr-toggle-theme" id="switch">
-        <label for="nr-appearance-switcher" class="nr-switch">
-            <img src="./image/icons8-sun-24.png" alt="Light">
-            <div id="toggle"></div>
-            <img src="./image/icons8-full-moon-24.png" alt="Dark">
+        <label for="nr-appearance-switcher" class="nr-switch" id="nr-icons">
+            <i class="fa-solid fa-sun"></i>
         </label>
     </div>
+    <script type='text/javascript' src='/script/toggle-theme.js'></script>
     <div class='nr-banner-list' id='nr-list' style='z-index: 99;'>
         <ul class='nr-list'>
             <li>
@@ -257,7 +257,6 @@
             <a href="https://gitlab.com/neoros">GitLab</a>
         </div>
         <script type="text/javascript" src="./script/current-year.js"></script>
-        <script type="text/javascript" src="./script/toggle-theme.js"></script>
     </div>
 </body>
 </html>

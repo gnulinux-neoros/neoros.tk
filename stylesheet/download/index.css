@@ -84,6 +84,14 @@ body {
 	background-color: #4395ff;
 }
 
+.not-has-dark-mode {
+	display: block;
+}
+
+.has-dark-mode {
+	display: none;
+}
+
 @media screen and (max-width: 1258px) {
 	.nr-options-inner {
 		flex-direction: column;
@@ -108,4 +116,29 @@ body {
 	.nr-section {
 		padding: 100px 40px;
 	}
+}
+
+/** Dark mode area **/
+.dark-mode .nr-header > .nr-navbar {
+	background: #000;
+}
+
+.dark-mode .nr-navigator .nr-navigator-list a {
+    color: #fff;
+}
+
+.dark-mode .nr-navigator .nr-navigator-list a::after {
+    background-color: #fff;
+}
+
+.dark-mode img.has-dark-mode {
+	display: block;
+}
+
+.dark-mode img.not-has-dark-mode{
+	display: none;
+}
+
+.dark-mode .nr-section {
+	background-color: #000;
 }

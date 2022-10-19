@@ -38,8 +38,15 @@
     <link rel='stylesheet' href='/stylesheet/root.css'>
     <link rel='stylesheet' href='/stylesheet/index.css'>
     <link rel='stylesheet' href='/stylesheet/404/index.css'>
+    <script src="https://kit.fontawesome.com/a8e8e98323.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="nr-toggle-theme" id="switch">
+        <label for="nr-appearance-switcher" class="nr-switch" id="nr-icons">
+            <i class="fa-solid fa-sun"></i>
+        </label>
+    </div>
+    <script type='text/javascript' src='/script/toggle-theme.js'></script>
     <div class='nr-banner-list' id='nr-list' style='z-index: 99;'>
         <ul class='nr-list'>
             <li>
@@ -58,6 +65,7 @@
         <header class='nr-header'>
             <div class="nr-banner">
                 <img src="/image/icons8-broken-link-96.png" alt="Broken Link" class="nr-board-icon">
+                <img src="/image/icons8-broken-link-96-dark.png" alt="Broken Link" class="nr-board-icon has-dark-mode">
                 <p>Page not available</p>
                 <div class="nr-body">
                     <p id="nr-pagecontent"></p>

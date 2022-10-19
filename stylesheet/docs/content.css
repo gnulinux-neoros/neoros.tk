@@ -90,6 +90,14 @@
 	color: #000;
 }
 
+img.not-has-dark-mode {
+	display: block;
+}
+
+img.has-dark-mode {
+	display: none;
+}
+
 @media screen and (max-width: 480px){
 	.nr-content {
 		padding-left: 40px;
@@ -113,4 +121,34 @@
 	.container-information,.container-warning,.container-critical {
 		font-size: 13px !important;
 	}
+}
+
+/** Dark mode area **/
+
+.dark-mode .nr-header {
+	background: #000;
+}
+
+.dark-mode .nr-navigator .nr-navigator-list a {
+    color: #fff;
+}
+
+.dark-mode .nr-navigator .nr-navigator-list a::after {
+    background-color: #fff;
+}
+
+.dark-mode img.has-dark-mode {
+	display: block;
+}
+
+.dark-mode img.not-has-dark-mode{
+	display: none;
+}
+
+.dark-mode .nr-content {
+	background-color: #000;
+}
+
+.dark-mode .container-critical {
+	color: #fff;
 }
