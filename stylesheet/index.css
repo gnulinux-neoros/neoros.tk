@@ -338,14 +338,6 @@
 .dark-mode .nr-selection-item {
 	background-color: #111111;
 	border: 1px solid #fcfcfc;
-	color: #fcfcfc;
-	text-decoration: inherit;
-	font-size: 17px;
-	padding: 10px 30px;
-	transition: ease .2s;
-	align-items: center;
-	text-align: center;
-	font-weight: 350;
 }
 
 .dark-mode .nr-selection-item:hover {
