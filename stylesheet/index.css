@@ -337,6 +337,7 @@
 
 .dark-mode .nr-selection-item {
 	background-color: #111111;
+	color: #fcfcfc;
 	border: 1px solid #fcfcfc;
 }
 
