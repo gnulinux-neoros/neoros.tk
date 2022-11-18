@@ -1,8 +1,15 @@
-.nr-header { background: linear-gradient(130deg, #6850ac, #ca2f00); } #nr-neoros-desktop { position: relative; margin-block-start: 20px; margin-block-end: 20px; margin-top: 1in; margin-bottom: 1cm; height: 80%; display: flex; justify-content: center; }
+.nr-header {
+	background:
+		linear-gradient(0deg, rgba(255, 255, 255, 0.701), rgba(255, 255, 255, 0.701)),
+		url(https://img.freepik.com/premium-photo/abstract-background-from-white-marble-texture-wall-luxury-backdrop_28586-1070.jpg?w=2000);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#nr-neoros-desktop { position: relative; margin-block-start: 20px; margin-block-end: 20px; margin-top: 1in; margin-bottom: 1cm; height: 80%; display: flex; justify-content: center; }
 .nr-navbar {
 	color: #fff;
 }
-.nr-banner-wrapper { display: flex; justify-content: space-between; margin-top: 50px; } .nr-banner { margin: 80px; display: flex; flex-direction: column; text-align: center; } .nr-banner > .nr-largetext { position: relative; color: #fff; font-size: 50px; margin-bottom: 15px; animation: showUp .7s; text-align: left; } .nr-banner > #nr-smalltext { position: relative; font-weight: 300; text-align: left; margin-right: 250px; } .nr-animation { animation: showUp .6s; opacity: 1; } @keyframes showUp { 0% { opacity: 0; top: 50px; } 100% { opacity: 1; top: 0; }} .nr-banner > p { font-size: 19px; color: #fff; } .nr-banner-button { margin-top: 30px; display: flex; margin-left: 80px; margin-right: auto; } .nr-banner-button > a { margin-right: 15px; text-decoration: none; font-size: 15px; }
+.nr-banner-wrapper { display: flex; margin-top: 50px; z-index: 1; } .nr-banner { margin: 80px; display: flex; flex-direction: column; } .nr-banner * { color: #000 !important; } .nr-banner > .nr-largetext { font-family: 'Adobe Clean Bold'; position: relative; color: #fff; font-size: 52px; margin-bottom: 15px; text-align: left; } .nr-banner > #nr-smalltext { font-size: 16px; position: relative; font-weight: 300; text-align: left; } .nr-banner > p { font-size: 19px; color: #fff; } .nr-banner-button { margin-top: 30px; display: flex; margin-left: 80px; margin-right: auto; z-index: 1; } .nr-banner-button > a { margin-right: 15px; text-decoration: none; font-size: 15px; }
 .nr-section {
 	background-color: transparent; padding: 100px; display: flex; flex-direction: column; color: black;
 }
@@ -30,32 +37,40 @@
 .nr-board-icon .dark-mode { display: none; }
 .nr-board-title p { font-size: 40px; font-weight: 400; text-align: center; }
 .nr-board-description { margin-top: 10px; text-align: center; } .nr-board-description p { font-size: 18.5px; } .nr-board-description a { color: #000; }
-.nr-arrow-container{ margin: 70px 20px; } .nr-arrow div { display: block; width: 15px; height: 15px; transform: rotate(45deg); border-right: 2px solid #fff; border-bottom: 2px solid #fff; margin: 0 0 3px 10px; animation: glowUp 5s infinite; } 
+.nr-arrow-container{ margin: 70px 20px; } .nr-arrow div { display: block; width: 15px; height: 15px; transform: rotate(45deg); border-right: 2px solid #000; border-bottom: 2px solid #000; margin: 0 0 3px 10px; animation: glowUp 5s infinite; } 
 
 @keyframes glowUp {
     0% {
-    	filter: drop-shadow(0px 0px 8px #ffffff75);
+    	filter: drop-shadow(0px 0px 8px #00000075);
     }
     50% {
-    	filter: drop-shadow(0px 0px 3px #ffffff);
+    	filter: drop-shadow(0px 0px 3px #000000);
     }
     100% {
-    	filter: drop-shadow(0px 0px 8px #ffffff75);
+    	filter: drop-shadow(0px 0px 8px #00000075);
     }
 }
 
 .nr-banner-item {
 	padding: 10px 25px;
-	border: 1px solid #fff;
-	color: #fff;
+	border: 2px solid #000;
+	border-radius: 999px;
+	color: #000;
 	font-weight: 350;
-	font-size: 18px !important;
 	transition: ease .15s;
+	font-family: "Adobe Clean Bold";
 }
 
-.nr-banner-item:hover {
-	background-color: #fff;
-	color: #000;
+.nr-banner-item:nth-child(1){
+	background-color: rgb(0, 132, 255);
+	border: 2px solid rgb(0, 132, 255);
+	color: #fff;
+	transition: ease .2s;
+}
+
+.nr-banner-item:nth-child(1):hover {
+	background-color: rgb(45, 153, 255);
+	border: 2px solid rgb(45, 153, 255);
 }
 
 #nr-neoros-desktop-img {
@@ -80,17 +95,7 @@
 }
 
 .nr-banner-list {
-	background-color: #000;
-	color: #fff;
-	font-weight: 350;
-}
-
-.nr-list li > a {
-	color: #fff;
-}
-
-.nr-navbar-button-inner > div {
-	background-color: #fff;
+	font-weight: bolder;
 }
 
 .nr-version-release {
@@ -215,6 +220,13 @@
 	box-shadow: 0px 0 20px #fff;
 	transition: ease .3s;
 }
+img.not-has-dark-mode {
+	display: block;
+}
+
+img.has-dark-mode {
+	display: none;
+}
 
 @media screen and (max-width: 1258px) {
 	.nr-board { text-align: center; align-items: center; flex-direction: column; } .nr-board-option > p { margin-bottom: 60px; } .nr-banner-button { flex-direction: column; margin-left: auto; margin-right: auto; } .nr-banner-button > .nr-banner-item { display: flex; justify-content: center; margin-right: 0px; margin-bottom: 15px; } .nr-board-information { margin-right: 0px !important; margin-bottom: 30px !important; padding: 0;} .nr-selection-navbar { margin-right: 0px; margin-bottom: 25px; flex-direction: column; } .nr-selection-information { margin-left: 0px; margin-top: 15px; margin-bottom: 15px; } .nr-selection { display: flex; flex-direction: column; margin: 25px auto; max-width: 700px; width: 90%; margin-bottom: 120px; }
@@ -337,10 +349,58 @@
 }
 
 /** Dark mode area **/
-.dark-mode .nr-header {
-	background: linear-gradient(130deg, #2b0016, #70250e);
+.dark-mode img.not-has-dark-mode {
+	display: none;
 }
 
+.dark-mode img.has-dark-mode {
+	display: block;
+}
+.dark-mode .nr-navbar-button-inner > div {
+	background-color: #fff;
+}
+.dark-mode .nr-banner-list {
+	background-color: #000;
+	font-weight: bolder;
+}
+.dark-mode .nr-navigator .nr-navigator-list a {
+	color: #fff;
+}
+
+.dark-mode .nr-navigator .nr-navigator-list a::after {
+	background-color: #fff;
+}
+.dark-mode .nr-list li > a {
+	color: #fff;
+}
+.dark-mode .nr-header {
+	background:
+		linear-gradient(0deg, rgba(0, 0, 0, 0.650), rgba(0, 0, 0, 0.650)),
+		url(https://cdn.wallpapersafari.com/10/80/VP5eTn.jpg);
+}
+.dark-mode .nr-banner * {
+	color: #fff !important;
+}
+.dark-mode .nr-banner-button > .nr-banner-item:nth-child(2) {
+	border: 2px solid #fff;
+	color: #fff;
+}
+.dark-mode .nr-arrow div {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+	animation: glowUpDark 5s infinite;
+}
+@keyframes glowUpDark {
+    0% {
+    	filter: drop-shadow(0px 0px 8px #ffffff75);
+    }
+    50% {
+    	filter: drop-shadow(0px 0px 3px #ffffff);
+    }
+    100% {
+    	filter: drop-shadow(0px 0px 8px #ffffff75);
+    }
+}
 .dark-mode .nr-section {
 	color: #fff;
 }
